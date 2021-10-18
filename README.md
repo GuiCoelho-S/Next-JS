@@ -194,7 +194,7 @@ export async function getStaticPaths() {
 }
 ```
 
-Se você viu o vídeo que recomendeu, do grande teló a TI, você já sabe o que significa o paths e o fallback, mas caso não tenha visto, aqui vai uma explicação básica com base no código do vídeo:
+Se você viu o vídeo que recomendei, do grande teló da TI, você já sabe o que significa o paths e o fallback, mas caso não tenha visto, aqui vai uma explicação básica com base no código do vídeo:
 
 ```
 export async function getStaticPaths() {
@@ -242,19 +242,19 @@ Para cada id listado em `getStaticPaths`, ele gerará uma <b>página estática</
 
 #### fallback: true
 
-Paros id's não listados em `getStaticPaths` ele tentará gerar uma página estática, de forma assícrona
+Para os id's não listados em `getStaticPaths` ele tentará gerar uma página estática, de forma assícrona
 
 #### fallback: blocking
 
-Assim como no `getServerProps` irá bloquear a página, até que a requisição seja feita com sucesso.
-Lembre-se de colocar bloking entre aspas, pois ele não é um valor booleano
+Assim como no `getServerProps`, ele irá bloquear a página, até que a requisição seja feita com sucesso.
+Lembre-se de colocar blocking entre aspas, pois ele não é um valor booleano
 <br><br>
 
 ## Importante
 
-Uma vez gerando uma página fazendo dessa maneira, de forma assícrona ou bloqueante, ela fica em cache, caso esteja hospedando a plataforma na Versell ela será armazenada em uma das CDN deles e replicada globalmente, ou seja, nas próximas consultas, a página será retornada imediatamente
+Uma vez gerando uma página fazendo dessa maneira, de forma assícrona ou bloqueante, ela fica em cache, caso esteja hospedando a plataforma na Vercel ela será armazenada em uma das CDN deles e a replicada globalmente, ou seja, nas próximas consultas, a página será retornada imediatamente
 
-Bom, se é a sua primeira vez, você pode ter ficado meio zonzo, vamos rememorizar o que vimos:
+Bom, se é a sua primeira vez, você pode ter ficado meio zonzo, vamos relembrar o que vimos:
 
 <center><h3>SPA (Single Page Application) </h3></center>
 
@@ -398,5 +398,7 @@ Esse grande resumo foi fruto de uma semana muito intensa de estudos, e não pode
     <p>Diego Rocketseat</p>
   <a>
 </div>
+
+Se você sabe de mais alguma informação e acha pertinente adicioná-la, vá em frente, ou algum erro que cometi, faça o favor de arrumar kk e me mandar um PR
 
 Espero que ajude nos seus estudos, sempre em busca do próximo nível 🚀🚀
